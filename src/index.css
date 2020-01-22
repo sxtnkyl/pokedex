@@ -1,13 +1,36 @@
+html,
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #3b4cca;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*
+color-scheme:
+Red
+Hex: #FF0000
+RGB: (255, 0, 0)
+
+Boston University Red
+Hex: #CC0000
+RGB: (204, 0, 0)
+
+Cerulean Blue
+Hex: #3B4CCA
+RGB: (59, 76, 202)
+
+Golden Yellow
+Hex: #FFDE00
+RGB: (255, 222, 0)
+
+*/

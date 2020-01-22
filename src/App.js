@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DexProvider from "./components/context/DexContext";
+import DexState from "./components/context/DexState";
+import DexReducer from "./components/context/DexReducer";
+import Navbar from "./components/navbar/Navbar";
+import Dex from "./components/dex/PokemonDex";
 
-function App() {
+import * as S from "./AppStyles";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <S.App>
+      <DexProvider initialState={DexState} reducer={DexReducer}>
+        <Navbar />
+        <Dex />
+      </DexProvider>
+    </S.App>
   );
-}
+};
 
 export default App;
